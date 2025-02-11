@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --background: #EEEFF2;
+    --dark: #1E252B;
+    --light-purple: #b3a9ff;
+    --blue: #4030b4;
+    --deep-blue: #5a4dfe;
+    --navy: #0F0B2E;
+    --deep: #32258C;
+    --border: #B0C3FC;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nunito", serif;
+}
+
+/* navbar section */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 7rem;
+    height: 100%;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.nav-list{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+
+.nav-child{
+    list-style-type: none;
+}
+
+.nav-child a{
+    text-decoration: none;
+    color: var(--dark);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Inter", serif;
+    
+}
+
+.last-child a {
+    background-color: var(--deep-blue);
+    padding: .6rem 1rem;
+    color: white;
+    border-radius: 12px;
+    margin-left: 1.5rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.last-child a:hover {
+    background-color: var(--blue);
+}
+
+/* hero section */
+
+.hero{
+    padding: 2rem 7rem 5rem 7rem;
+    /* height: 100vh; */
+    background-color: var(--background);
+}
+
+.hero-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.left-text{
+    width: 40%;
+}
+
+.hero-header{
+    color: var(--navy);
+    font-size: 3.5rem;
+}
+
+.hero-text{
+    color: var(--dark);
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    line-height: 1.8;
+    font-family: "Inter", serif;
+}
+
+.hero-btn{
+    background-color: var(--deep-blue);
+    padding: .6rem 1rem;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Inter", serif;
+}
+
+.hero-btn:hover{
+    background-color: var(--blue);
+}
+
+.hero-end{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* about section */
+
+.about-section{
+    background-color: var(--deep);
+    color: white;
+}
+
+.about-wrap{
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.about-header{
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.about-header::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 5px;
+    background-color: var(--light-purple);
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.about-text{
+    font-size: 1.2rem;
+    margin: auto;
+    max-width: 70%;
+}
+
+.new{
+    color: var(--light-purple);
+    font-family: "Inter", serif;
+    font-weight: 500;
+}
+
+/* services section */
+
+.services-section{
+    padding: 5rem 7rem;
+    background-color: var(--background);
+}
+
+.services-section{
+    text-align: center;
+}
+
+.services-wrapper{
+    padding-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.cards{
+    text-align: start;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: auto;
+
+}
+
+.card-header{
+    font-size: 1.8rem;
+    color: var(--navy);
+    margin-bottom: .5rem;
+}
+
+.card-paragraph{
+   font-size: 17px;
+   font-weight: 500;
+   font-family: "Inter", serif;
+   line-height: 22px;
+   padding-bottom: 1rem;
+}
+
+.starting{
+  text-decoration: none;
+  color: var(--deep-blue);
+  padding-top: 1rem;
+  font-weight: 600;
+  font-family: "Inter", serif;
+}
+
+/* case studies section */
