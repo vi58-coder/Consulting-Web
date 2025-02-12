@@ -257,19 +257,19 @@ body{
     margin-bottom: 10px;
 }
 
-.text-content h1 {
+.text-head {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.text-content p {
-    font-size: 16px;
+.text-paragraph {
+    font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 10px;
 }
 
 
-.text-content a {
+.text-link {
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -277,7 +277,7 @@ body{
 
 .image-section {
     position: absolute;
-    top: 115rem; /* Move it up */
+    top: 115.5rem; /* Move it up */
     left: 200px; /* Slight offset from left */
     width: 360px;
     height: 400px; /* Taller height */
@@ -285,8 +285,28 @@ body{
     z-index: 1; /* Overlay on top of content */
 }
 
-.image-section img {
+.block-one {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+.case-wrapper-second{
+    padding-top: 2rem;
+}
+
+.content-two{
+    max-width: 600px;
+    margin-left: 13rem;
+}
+
+.image-two{
+    position: absolute;
+    top: 145.5rem; /* Move it up */
+    right: 200px; /* Slight offset from left */
+    width: 360px;
+    height: 400px; /* Taller height */
+    overflow: hidden;
+    z-index: 1; /* Overlay on top of content */
+}
+
