@@ -10,6 +10,11 @@
     --navy: #0F0B2E;
     --deep: #32258C;
     --border: #B0C3FC;
+    --after: #5A45FE;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 *{
@@ -174,10 +179,19 @@ body{
 .services-section{
     padding: 5rem 7rem;
     background-color: var(--background);
+    text-align: center;
 }
 
-.services-section{
-    text-align: center;
+.services-header::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    background-color: var(--after);
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px; 
 }
 
 .services-wrapper{
@@ -227,6 +241,18 @@ body{
     background-color: white;
     text-align: center;
     padding: 2rem 0;
+}
+
+.case-header::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    background-color: var(--after);
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;  
 }
 
 .content-section {
@@ -310,3 +336,126 @@ body{
     z-index: 1; /* Overlay on top of content */
 }
 
+
+.review-section{
+    text-align: center;
+    background-color: var(--background);
+    margin-top: 3rem;
+    padding: 3rem 0;
+}
+
+.review-header::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 5px;
+    background-color: var(--after);
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+  /* Footer */
+  .footer {
+    background-color: var(--deep);
+    color: white;
+    
+}
+
+.footer-wrap{
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.footer-column {
+    width: 200px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.contact-info p{
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background: var(--deep);
+    font-size: 14px;
+}
+
+.bottom-wrap{
+    border-top: 2px solid var(--light-purple);
+    padding: 1rem 0 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.bottom-paragraph{
+    color: white;
+    font-size: 16px;
+}
+
+.bottom-links{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    font-size: 16px;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
