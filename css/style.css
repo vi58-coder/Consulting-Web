@@ -312,7 +312,7 @@ body{
 
 .image-section {
     position: absolute;
-    top: 115.5rem; /* Move it up */
+    top: 113.5rem; /* Move it up */
     left: 200px; /* Slight offset from left */
     width: 360px;
     height: 400px; /* Taller height */
@@ -337,7 +337,7 @@ body{
 
 .image-two{
     position: absolute;
-    top: 145.5rem; /* Move it up */
+    top: 143.5rem; /* Move it up */
     right: 200px; /* Slight offset from left */
     width: 360px;
     height: 400px; /* Taller height */
